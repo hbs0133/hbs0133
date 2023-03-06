@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>내가한지원서</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div id="border">
+  <div id="top">
+    <h1>프론트엔드 개발자 지원서</h1>
+  <p><strong>HTML,CSS3,Javascript</strong>에 대한 기술적이해와 경험이 있는분을 찾습니다</p>
+  </div>
+  <hr>
+  <div id="profile">
+    <fieldset>
+      <legend><strong>개인정보</strong>
+      </legend>
+      <table>
+        <tr>
+          <td><label for="name">이름 :</label></td>
+          <td><input type="text" id="name"></td>
+        </tr>
+        <tr>
+          <td><label for="pw">연락처 :</label></td>
+          <td><input type="number" id="nomber"></td>
+        </tr>
+      </table>
+    <!-- <ul>
+      <li><label for="name">이름 :</label>
+        <input type="text" id="name"></li>
+      <li><label for="number">연락처 :</label>
+        <input type="number" id="name"></li>
+    </ul> -->
+  </fieldset>
+  </div>
+  <div id="middle">
+    <fieldset>
+      <legend><strong>지원분야</strong>
+        <ul>
+          <li><input type="radio" name="radio">웹 퍼블리싱</li>
+          <li><input type="radio" name="radio">웹 어플리케이션 개발</li>
+          <li><input type="radio" name="radio">개발 환경개선</li>
+        </ul>
+      </legend>
+    </fieldset>
+    <div id="bottom">
+      <fieldset>
+      <legend><strong>지원동기</strong></legend>
+      <textarea name="f" id="f" cols="80" rows="20">
+      </textarea>
+      <div id="button">
+      <input type="submit" value="제출하기">
+      <button>다시작성</button>
+      </div>
+    </fieldset>
+    </div>
+  </div>
+  </div>
+</body>
+</html>
