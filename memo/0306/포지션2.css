@@ -1,0 +1,27 @@
+div {
+  width: 100px;
+  width: 100px;
+}
+
+#a {
+  width: 300px;
+  height: 300px;
+  top: 100px;
+  left: 200;
+  background-color: blue;
+  position: relative;
+}
+
+#b {
+  background-color: red;
+  position: absolute;
+  top: 0;
+  left: 100px;
+}
+
+#c {
+  background-color: green;
+  position: fixed;
+  top: 0;
+  left: 200px;
+}
