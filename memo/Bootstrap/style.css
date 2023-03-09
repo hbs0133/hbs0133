@@ -1,0 +1,23 @@
+body {
+  padding-top: 70px;
+}
+
+/* .container {
+  padding-top: 70px;
+} */
+
+.box {
+  padding-top: 20px;
+}
+/* .first {
+  
+} */
+
+.card-header {
+  background-color: beige;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
