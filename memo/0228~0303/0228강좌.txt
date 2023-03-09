@@ -1,0 +1,274 @@
+hbs0133.dothome.co.kr
+
+
+
+css따로빼기전
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      text-align: center;
+    }
+      .NAVER{
+        color: #04cf04;
+      }
+      #btn {
+        padding: 10px 20px;
+        border-radius: 10px;
+      border: 0px solid black;
+      }
+  </style>
+</head>
+<body>
+  <h3>네이버 링크페이지 만들기</h3>
+  <h1><span class="NAVER">NAVER</span>의 쇼핑 사이트 링크로 이동해주세요!</h1>
+  <h4>내일 라이브쇼핑이 진행될페이지로 이동합니다</h4>
+  <a href="https://shopping.naver.com/home" target="_blank">
+    <img src="./img/ns.jpg" alt="네이버쇼핑페이지"><br />
+    <button id="btn">네이버쇼핑이동하기</button>
+  </a>
+</body>
+</html>
+
+----------------------------------------------------------------------------------------------------------------------------------------
+css
+
+ body {
+      text-align: center;
+      font-family: 'Gugi', cursive;
+    }
+      .NAVER{
+        color: #04cf04;
+      }
+      #btn {
+        padding: 10px 20px;
+        border-radius: 10px;
+      border: 0px solid black;
+      }
+
+html
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Gugi&display=swap" rel="stylesheet">
+</head>
+<body>
+  <h3>네이버 링크페이지 만들기</h3>
+  <h1><span class="NAVER">NAVER</span>의 쇼핑 사이트 링크로 이동해주세요!</h1>
+  <h4>내일 라이브쇼핑이 진행될페이지로 이동합니다</h4>
+  <a href="https://shopping.naver.com/home" target="_blank">
+    <img src="./img/ns.jpg" alt="네이버쇼핑페이지"><br />
+    <button id="btn">네이버쇼핑이동하기</button>
+  </a>
+</body>
+</html>
+
+
+----------------------------------------------------------------------------------------------------------------------------------
+아이유 회원가입
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Dongle&family=Gugi&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="img">
+  <div id="textbox"></div>
+    <h1>로그인페이지</h1>
+    <h5>ID, PW를 입력해주세요</h5>
+</div>
+  <div>
+  </div>
+  <div id="wrap">
+    <div id="join">
+      <p>
+        <label for="id">ID : </label>
+        <input type="text" id="id" name="id">
+      </p>
+      <p>
+        <label for="pw">PW : </label>
+        <input type="text" id="pw" name="pw"> 
+      </p>
+    </div>
+    <div id="Logbox">
+      <button>회원가입</button>
+      <button>로그인하기</button> 
+  </div>
+  </div>
+</body>
+</html>
+
+
+
+
+css
+
+
+body{
+font-family: 'Dongle', sans-serif;
+}
+#img{
+  width: 400px; height: 400px;
+  margin: 0 auto;
+background-image: url(./img/iu.jpg);
+background-size: cover;
+background-position: center;
+position: relative;
+border-radius: 10px;
+}
+#textbox{
+  width: 400px; height: 150px;
+  position: absolute;
+  margin-top: 35%;
+  text-align: center;
+  line-height: 58px;
+  background-color: rgba(211, 211, 211, 0.8);
+}
+#wrap {
+  width: 400px;
+margin: auto;
+text-align: center;
+}
+#join {
+  width: 400px;
+}
+#Logbox{
+  display: block;
+  margin: 10px;
+}
+button{
+  display: inline-block;
+  width: 150px;
+  padding: 10px 20px;
+}
+
+
+
+----------------------------------------------------------------------
+q태그 
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div>
+    <h2>성공한 사람이 아니라 <mark>가치있는 사람</mark>이 되려고 힘써라!</h2>
+    <blockquote>- 아인슈타인 -</blockquote>
+  </div>
+  <hr /> 
+  성공한 사람이 아니라 <mark>가치있는 사람</mark>이 되려고 힘써라!
+  <q>- 아인슈타인 -</q>
+</body>
+</html>
+
+----------------------------------------------------------------------------------------------
+b 태그 글씨체
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1><b>lorem ipsom dolor sit amet</b></h1>
+  <h1><i>lorem ipsom dolor sit amet</i></h1>
+  <h1><small>lorem ipsom dolor sit amet</small></h1>
+  <h1><sub>lorem ipsom dolor sit amet</sub></h1>
+  <h1><sup>lorem ipsom dolor sit amet</sup></h1>
+  <h1><ins>lorem ipsom dolor sit amet</ins></h1>
+  <h1><del>lorem ipsom dolor sit amet</del></h1>
+</body>
+</html>
+
+
+----------------------------------------------------------------------------------------------------------
+목록태그
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+<h1>ol tag</h1>
+<ol type="A" start="3">
+  <li>face book</li>
+  <li>tweeter</li>
+  <li>linked in</li>
+</ol>
+<h1></h1>
+<ul>
+  <li>face book</li>
+  <li>tweeter</li>
+  <li>linked in</li>
+</ul>
+</body>
+</html>
+--------------------------------------------------------
+네이버 목록(페이스북)
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #menu,li {
+      float: left;
+      width: 100px; height: 35px;
+      background-color: antiquewhite;
+      text-align: center;
+      line-height: 35px;
+      list-style: none;
+    }
+    a{
+      text-decoration: none;
+      color: black;
+      font-weight: 900 ;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <ul>
+      <li><a href="https://www.facebook.com" target="_blank">face book</a></li>
+      <li>tweeter</li>
+      <li>linked in</li>
+    </ul>  
+  </div>
+</body>
+</html>
