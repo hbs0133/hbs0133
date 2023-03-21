@@ -1,0 +1,8 @@
+.container .preloading
+	.preloading-inner
+		img
+	.hrading-preloading-inner
+		h2.logo
+		p.slogan
+			span*3
+				
