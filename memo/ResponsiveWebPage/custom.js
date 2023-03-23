@@ -43,8 +43,8 @@ $(function() {
     dots: false,
     arrows: false,
     autoplay: true,
-    autoplaySpeed: 700,
+    autoplaySpeed: 800,
     fade: true,
-    // cssEase: 'liner'
+    cssEase: 'linear'
     })
 });
