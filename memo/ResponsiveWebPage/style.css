@@ -219,7 +219,6 @@ header {
 }
 .item {
   overflow: hidden;
-  margin-bottom: 120px;
 }
 .item img {
   height: 120px;
@@ -238,6 +237,7 @@ header {
 .item p {
   font-size: 18px;
   overflow: hidden;
+  margin-bottom: 120px;
 }
 .item:hover h3 {
   color: #000;
@@ -437,9 +437,10 @@ input[id=tab3]:checked ~ .tabs {
   margin: 0;
   color: #fff;
 }
-.plan-heading .plan-bar {
-  background-color: dodgerblue;
+.plan-heading .plan-bar,
+.history-info .plan-bar {
   display: inline-block;
+  background-color: dodgerblue;
 }
 .plan-heading p {
   color: #fff;
@@ -471,10 +472,10 @@ input[id=tab3]:checked ~ .tabs {
   line-height: 1.5em;
 }
 
-.history-info .plan-bar{
+/* .history-info .plan-bar{
   background-color: dodgerblue;
   display: inline-block;
-}
+} */
 .history-slider .slick-arrow {
   display: none !important;
 }
@@ -576,8 +577,8 @@ background-color: #fff;
 /* #### Office section #### */
 .office {
   float: left;
-  width: 60%;
-  padding: 100px;
+  width: 50%;
+  padding-right: 100px;
 }
 .office .headquaters {
   margin-bottom: 50px;
@@ -615,10 +616,13 @@ background-color: #fff;
 }
 .service-item i {
   color: #1db1f0;
+  font-size: 40px;
+  margin-bottom: 10px;
 }
 .service-item h3 {
   color: #fff;
   font-size: 22px;
+  margin: 0;
 }
 .feature .office, .service {
   color: #fff;
