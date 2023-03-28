@@ -5,7 +5,7 @@
 // });
 $('.my-img').slick({
   slidesToShow: 2,
-  slidesToScroll: 1,
+  slidesToScroll: 2,
   autoplay: true,
-  autoplaySpeed: 1000,
+  autoplaySpeed: 800,
 });
