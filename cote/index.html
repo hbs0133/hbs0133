@@ -27,7 +27,7 @@
 	<link rel="stylesheet" href="/cote.css">
 	<script defer src="/js/script.js"></script>
   	
-	<title>Page Scroll Effects | CodyHouse</title>
+	<title>자기소개</title>
 </head>
 <!-- hijacking: on/off - animation: none/scaleDown/rotate/gallery/catch/opacity/fixed/parallax -->
 
@@ -42,6 +42,7 @@
 						<div class="home-gnb">
 							<a class="home-menu" href="#home">Home</a>
 							<a class="about-menu" href="#about">About</a>
+							<a class="works" href="#works">Works</a>
 							<a class="contact-menu" href="#contact">Contact</a>
 						</div>
 					</div>
@@ -53,12 +54,13 @@
 		<div id="about">
 			<div class="about-inner">
 				<div class="top-img">
-					<!-- <img src="/img/제목 없음.png" alt=""> -->
+					<img src="/img/제목 없음.png" alt="">
 				</div>
 				<div class="about-gnb-box">
 					<div class="about-gnb">
 						<a href="#home">Home</a>
 						<a href="#about">About</a>
+						<a href="#works">Works</a>
 						<a href="#contact">Contact</a>
 					</div>
 				</div>
@@ -98,6 +100,38 @@
 			</div>
 		</div>
 	</section>
+	
+	<section class="cd-section">
+		<div id="works">
+			<div class="works-inner">
+				<div class="top-img">
+					<img src="/img/제목 없음.png" alt="">
+				</div>
+				<div class="about-gnb-box">
+					<div class="about-gnb">
+						<a href="#home">Home</a>
+						<a href="#about">About</a>
+						<a href="#works">Works</a>
+						<a href="#contact">Contact</a>
+					</div>
+				</div>
+				<div class="works-main">
+					<div class="works-text">
+					</div>
+					<div class="works-img">
+						<div class="work-img-top">
+							<img src="/img/작업물3.png" alt="">
+							<img src="/img/작업물5.png" alt="">
+						</div>
+						<div class="work-img-bottom">
+							<img src="/img/작업물4.png" alt="">
+							<img src="/img/작업물6.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
 	<section class="cd-section">
 		<div id="contact">
@@ -109,6 +143,7 @@
 					<div class="contact-gnb">
 						<a href="#home">Home</a>
 						<a href="#about">About</a>
+						<a href="#works">Works</a>
 						<a href="#contact">Contact</a>
 					</div>
 				</div>
@@ -129,8 +164,8 @@
 					</div>
 					<div class="textarea-box">
 						<p>Send Mail</p>
-						<textarea cols="170" rows="30" placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;보낼 메시지를 입력해주세요"></textarea>
-						<button>Send</button>
+						<textarea cols="170" rows="27" placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;보낼 메시지를 입력해주세요"></textarea>
+						<button id="send" onclick="send()">Send</button>
 					</div>
 				</div>
 			</div>
