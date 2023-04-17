@@ -19,5 +19,9 @@ $(document).ready(function() {
 	});
 });
 
-/*particle*/
-
+/*마우스 이동 이벤트*/
+let pointSize = $(".pointer").width();
+$("body").mousemove(function(e){
+  $(".pointer").css("top", e.pageY-pointSize)
+  $(".pointer").css("left", e.pageX-pointSize)
+});
