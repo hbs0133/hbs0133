@@ -10,16 +10,88 @@ body{
   transform-origin: right;
   transform: rotateZ(-90deg); */
   font-size: 30px;
+  z-index: 10;
 }
 .fa-shuttle-space {
   color: #fff;
   transform: rotateZ(-135deg);
 }
 
+
+/*Slogan Page*/
+.Slogan {
+  width: 100vw;
+  height: 100vh;
+  background: url("/img/우주선내부ver1.jpg")no-repeat center center;
+  background-size: cover;
+}
+.Slogan-container {
+  position: relative;
+  width: 80%;
+  height: 80%;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.Slogan-title {
+  position: absolute;
+  top: 8%;
+  left: 50%;
+  translate: -50%;
+
+  font-size: 3rem;
+  color: #fff;
+  letter-spacing: 1rem;
+}
+.Slogan-content {
+  width: 80%;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  translate: -50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Slogan-text {
+  text-align: center;
+  width: 50%;
+  color: #fff;
+  font-size: 2rem;
+}
+.Slogan-text e {
+  display: block;
+  margin-top: 30%;
+}
+.hipster {
+  animation: fadeout 3s both ;
+}
+.developer{
+  animation: fadein 3s;
+  animation-delay: 3s;
+}
+@keyframes fadeout {
+  0%{
+    opacity: 1;
+  }
+  100%{
+    display: none;
+    opacity: 0;
+  }
+}
+@keyframes fadein {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
 /*Profile Page*/
 .Profile {
-  width: 100%;
-  height: 100%;
-  background: url("/img/우주선내부ver1.jpg")no-repeat center center;
+  width: 100vw;
+  height: 100vh;
+  background: url("/img/프로필페이지배경.jpg")no-repeat center center;
   background-size: cover;
 }

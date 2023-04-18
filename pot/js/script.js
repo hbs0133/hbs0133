@@ -25,3 +25,19 @@ $("body").mousemove(function(e){
   $(".pointer").css("top", e.pageY-pointSize)
   $(".pointer").css("left", e.pageX-pointSize)
 });
+
+/* 슬로건페이지 이미지바꿈 */
+
+// let img = document.querySelector(".SloganImg")
+
+// function imgchange() {
+// 	img.src= "/img/circle.png"
+// };
+// setTimeout(imgchange, 2000)
+
+
+// $('.hipster').fadeOut(5000, function(){
+// 	$('.developer').display ="block"
+// 	$('.developer').fadein(5000)
+// })
+
