@@ -36,8 +36,27 @@ $("body").mousemove(function(e){
 // setTimeout(imgchange, 2000)
 
 
-// $('.hipster').fadeOut(5000, function(){
-// 	$('.developer').display ="block"
-// 	$('.developer').fadein(5000)
-// })
+// $('.hipster').fadeOut(2000,function() {
 
+// 	$('#developer').display = "";  
+
+// 	$('.developer').fadeIn(2000);
+// });
+
+$(window).on("wheel", function (event){
+  // deltaY obviously records vertical scroll
+  
+  // event.originalEvent → JavaScript 의 wheelEvent 객체
+  // deltaY 값은 개인이 마우스 설정에서 설정한 휠 설정 값에 따라 다르다.
+  // console.log(event.originalEvent.deltaY);
+
+  if (event.originalEvent.deltaY > 0) {
+    // wheeled up
+		$('.hipster').fadeOut(1000,function() {
+
+			$('#developer').display = "";  
+		
+			$('.developer').fadeIn(5000);
+		});
+  }
+});
