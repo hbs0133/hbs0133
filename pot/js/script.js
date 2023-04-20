@@ -51,8 +51,8 @@ $(window).on("wheel", function (event){
   // console.log(event.originalEvent.deltaY);
 
   if (event.originalEvent.deltaY > 0) {
-    // wheeled up
-		$('.hipster').fadeOut(1000,function() {
+    // wheeled down
+		$('.hipster').fadeOut(8000,function() {
 
 			$('#developer').display = "";  
 		
