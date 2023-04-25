@@ -1,4 +1,4 @@
-/*Page Scroll*/
+/*------------------------Page Scroll-------------------------------------*/
 $(document).ready(function() {
 	$('#fullpage').fullpage({
 		//options here
@@ -19,14 +19,14 @@ $(document).ready(function() {
 	});
 });
 
-/*마우스 이동 이벤트*/
+/*--------------------------------- 마우스 이동 이벤트 -------------------------------------*/
 let pointSize = $(".pointer").width();
 $("body").mousemove(function(e){
   $(".pointer").css("top", e.pageY-pointSize)
   $(".pointer").css("left", e.pageX-pointSize)
 });
 
-/* 슬로건페이지 이미지바꿈 */
+/* ----------------------------------슬로건페이지 이미지바꿈 -------------------------------*/
 
 // let img = document.querySelector(".SloganImg")
 
@@ -52,11 +52,105 @@ $(window).on("wheel", function (event){
 
   if (event.originalEvent.deltaY > 0) {
     // wheeled down
-		$('.hipster').fadeOut(8000,function() {
+		$('.Slogan-container').display = ""; 
+		$('.Slogan-container').fadeIn(2000);
+		$('.hipster').fadeOut(10000,function() {
 
 			$('#developer').display = "";  
 		
-			$('.developer').fadeIn(5000);
+			$('.developer').fadeIn(3000);
 		});
   }
 });
+/* ---------------------슬로건 텍스트 한글자씩 -------------------------------------*/
+
+const SloganSpace = document.querySelector("e");
+const texts = ["Hipster","힙스터"];
+const speed = 300;
+let e = 0;
+
+const typing = async () => {  
+  const text = texts[e].split("");
+  
+  while (text.length) {
+    await wait(speed);
+    SloganSpace.innerHTML += text.shift(); 
+  }
+  
+  // 잠시 대기
+  await wait(800);
+  
+  // 지우는 효과
+  remove();
+}
+
+// 글자 지우는 효과
+const remove = async () => {
+  const text = texts[e].split("");
+  
+  while (text.length) {
+    await wait(speed);
+    
+    text.pop();
+    SloganSpace.innerHTML = text.join(""); 
+  }
+  
+  // 다음 순서의 글자로 지정, 타이핑 함수 다시 실행
+  e = !texts[e+1] ? 0 : e + 1;
+  typing();
+}
+
+// 딜레이 기능 ( 마이크로초 )
+function wait(ms) {
+  return new Promise(res => setTimeout(res, ms))
+}
+
+// 초기 실행
+setTimeout(typing, 1500);
+
+
+/* -----------------------뮤직플레이어---------------------------------*/
+const frame = document.querySelector("section");
+const lists = frame.querySelectorAll("article");
+const deg = 45;
+const len = lists.length-1;
+let i = 0;
+
+for(let el of lists) {
+  let pic = el.querySelector(".pic");
+  el.style.transform = `rotate(${deg*i}deg) translateY(-100vh)`;
+  pic.style.backgroundImage = `url(/img/member${i+1}.jpg)`;
+  i++;  
+};
+
+/* 회전액션 */
+const prev = document.querySelector(".btnPrev");
+const next = document.querySelector(".btnNext");
+
+let num = 0;
+
+prev.addEventListener("click", () => {
+  num++;
+  frame.style.transform = `rotate(${deg*num}deg)`;
+
+  (active == 0) ? active = len : active--;
+  activation(active, lists)
+})
+
+next.addEventListener("click", () => {
+  num--;
+  frame.style.transform = `rotate(${deg*num}deg)`;
+
+  (active == len) ? active = 0 : active++;
+  activation(active, lists)
+})
+
+/* 가운데 있는 패널 활성화 */
+let active = 0;
+
+function activation(index, lists) {
+  for(let el of lists) {
+    el.classList.remove("on");
+  }
+  lists[index].classList.add("on");
+}
