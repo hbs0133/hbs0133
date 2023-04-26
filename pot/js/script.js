@@ -53,7 +53,7 @@ $(window).on("wheel", function (event){
   if (event.originalEvent.deltaY > 0) {
     // wheeled down
 		$('.Slogan-container').display = ""; 
-		$('.Slogan-container').fadeIn(2000);
+		$('.Slogan-container').fadeIn(3000);
 		$('.hipster').fadeOut(10000,function() {
 
 			$('#developer').display = "";  
@@ -66,7 +66,7 @@ $(window).on("wheel", function (event){
 
 const SloganSpace = document.querySelector("e");
 const texts = ["Hipster","힙스터"];
-const speed = 300;
+const speed = 500;
 let e = 0;
 
 const typing = async () => {  
@@ -119,7 +119,7 @@ let i = 0;
 for(let el of lists) {
   let pic = el.querySelector(".pic");
   el.style.transform = `rotate(${deg*i}deg) translateY(-100vh)`;
-  pic.style.backgroundImage = `url(/img/member${i+1}.jpg)`;
+  pic.style.backgroundImage = `url(/img/작업물${i+1}.png)`;
   i++;  
 };
 
