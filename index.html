@@ -4,13 +4,224 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>병선이 포폴(아이콘)</title>
+  <!--Jquery-->
+  <script defer src="https://code.jquery.com/jquery-3.6.4.js"></script>
+  <script defer src="https://code.jquery.com/jquery-migrate-1.4.1.js"></script>
+  <!--FullScreen-->
+  <link rel="stylesheet" href="/js/pagescroll/jquery.fullPage.css">
+  <script defer src="/js/pagescroll/jquery.fullPage.js"></script>
+  <!--Particle-->
+  <link rel="stylesheet" href="/js/particles.js-master/demo/css/style.css">
+  <!--Fontawesome-->
+  <script defer src="https://kit.fontawesome.com/ae50144c87.js" crossorigin="anonymous"></script>
+  <!--Custom Css&Js-->
+  <script defer src="/js/script.js"></script>
+  <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-  <h6>네이버 링크페이지 만들기</h6>
-  <h1>naver의 쇼핑 사이트 링크로 이동해주세요!</h1>
-  <h4>내일 라이브쇼핑이 진행될페이지로 이동합니다</h4>
-  <a href="https://shopping.naver.com/home" target="_blank">
-    <img src="./img/ns.jpg" alt="네이버쇼핑페이지"></a>
+  <div id="fullpage">  <!--id 값은 반드시 지켜줘야 하는 값(변경불가)-->
+    <div class="section"> <!--클래스명 section 고정-->
+      <div id="particles-js">
+        <div class="pointer"><i class="fa-solid fa-shuttle-space"></i></div>
+        <div class="arrows-down">Scroll to the next page<i class="fa-solid fa-angles-down"></i></div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="slide" data-anchor="slide1">
+        <div class="Slogan">
+          <div class="Slogan-container" style="display: none;">
+            <div class="Slogan-title">
+              <h1>"개발자는 </h1>
+              <e></e>
+            </div>
+            <h1 class="test">가 아니다!"</h1>
+            <div class="Slogan-content">
+              <div class="Slogan-text">
+                <p class="Slogan-text1">
+                  “개발의 가치는 힙스터 처럼,<br/>
+                  개발은 힙스터가 아닌것처럼.”<br/>
+                </p>
+                <p class="Slogan-text2">
+                  힙스터가 되고싶던 황병선이<br/>
+                  코딩을 하다 어느날 문득<br/>
+                  떠오른 생각입니다.<br/>
+                </p>
+                <p class="Slogan-text3">
+                  힙스터란<br/>
+                  ‘유행 같은 대중의 큰 흐름을 따르지 않고 자신들만의<br/>
+                  고유한 패션과 음악문화를 좇는 부류를 이르는 말’<br/>
+                  입니다<br/>
+                </p>
+                <p class="Slogan-text4">
+                  하지만<br/>
+                  개발을 할때는<br/>
+                  개발의 유행을따르고 자신만의 고유한것이 아닌<br/>
+                  모두가 쉽게 볼수있고 사용할수있는<br/>
+                  개발을하는것이 좋은 개발자라고 생각합니다<br/>
+                </p>
+                <p class="Slogan-text5">
+                  저는 이를 모토로 개발하고 있습니다!
+                </p>
+              </div>
+              <div class="Slogan-img">
+                <p>
+                  <img class="developer" src="/img/circle.png" alt="개발자" style="display: none;">
+                  <img class="hipster" src="/img/hipster.png" alt="힙스터">
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slide" data-anchor="slide2">
+        <div class="Profile">
+        </div>
+      </div>
+    </div>
+      
+    <div class="section" id="Project">
+      <div class="pointer"><i class="fa-solid fa-shuttle-space"></i></div>
+      <figure>
+        <video src="/img/-2381.mp4" autoplay muted loop></video>
+        <!-- Player Pannel -->
+        <section>
+          <article class="on">
+            <div class="inner">
+              <!-- Cover Img -->
+              <div class="pic">
+                <a href="/Project/8.MOVIEPAGE/index.html" target="_blank">
+                </a>
+                <div class="dot"></div>
+                <div class="txt">
+                  <h2>Roman Holiday MOVIEPAGE</h2>
+                  <p>
+                    Roman Holiday MOVIEPAGE 프로젝트는<br/>
+                    Jquery를 활용하여 조금더 동적인 페이지를 개발했습니다
+                  </p>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article>
+            <div class="inner">
+              <div class="pic">
+                <a href="/Project/MobileWebPage/html/index.html" target="_blank"></a>
+                <div class="dot"></div>
+                <div class="txt">
+                  <h2>ToDay's Meal Kit</h2>
+                  <p>
+                    ToDay's Meal Kit 프로젝트는<br/>
+                    밀키트 어플을 모바일환경에 맞춰 개발한 페이지 입니다
+                  </p>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article>
+            <div class="inner">
+              <div class="pic">
+                <div class="dot"></div>
+                <div class="txt">
+                  <h2>Blizzards</h2>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article>
+            <div class="inner">
+              <div class="pic">
+                <div class="dot"></div>
+                <div class="txt">
+                  <h2>Blizzards</h2>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article>
+            <div class="inner">
+              <div class="pic">
+                <div class="dot"></div>
+                <div class="txt">
+                  <h2>Blizzards</h2>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article>
+            <div class="inner">
+              <div class="pic">
+                <div class="dot"></div>
+                <div class="txt">
+                  <h2>Blizzards</h2>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article>
+            <div class="inner">
+              <div class="pic">
+                <div class="dot"></div>
+                <div class="txt">
+                  <h2>Blizzards</h2>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article>
+            <div class="inner">
+              <div class="pic">
+                <div class="dot"></div>
+                <div class="txt">
+                  <h2>Blizzards</h2>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+        <!-- Rotation Buttons -->
+        <div class="btnPrev">
+          <span>Prev Planet</span>
+        </div>
+        <div class="btnNext">
+          <span>Next Planet</span>
+        </div>
+      </figure>
+    </div>
+
+</div>
+<script defer src="/js/particle/particles.js"></script>
+<script defer src="/js/particles.js-master/demo/js/app.js"></script>
 </body>
 </html>
+
+
+
+<!-- <div class="section">
+  <div class="slide" data-anchor="slide1">
+    <div class="pointer"><i class="fa-solid fa-shuttle-space"></i></div>
+  </div> 
+  <div class="slide" data-anchor="slide2">
+    <div class="pointer"><i class="fa-solid fa-shuttle-space"></i></div>
+  </div>
+</div> -->
+<!--가로 슬라이드 클래스명 slide 고정-->
