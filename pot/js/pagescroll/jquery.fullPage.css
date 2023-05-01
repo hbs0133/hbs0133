@@ -127,6 +127,7 @@ html.fp-enabled,
 .fp-slidesNav ul {
   margin: 0;
   padding: 0;
+  display: none;
 }
 #fp-nav ul li,
 .fp-slidesNav ul li {
