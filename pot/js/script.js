@@ -22,8 +22,8 @@ $(document).ready(function() {
 /*--------------------------------- 마우스 이동 이벤트 -------------------------------------*/
 let pointSize = $(".pointer").width();
 $("body").mousemove(function(e){
-  $(".pointer").css("top", e.pageY-pointSize)
-  $(".pointer").css("left", e.pageX-pointSize)
+  $(".pointer").css("top", e.pageY)
+  $(".pointer").css("left", e.pageX)
 });
 
 
@@ -169,7 +169,7 @@ ProfileBtnImg.src = "/img/button(final).png"
 
 
 ProfileBtn.addEventListener("mouseenter", function(){
-  ProfileBtnImg.src = "/img/buttonhover.png"
+  ProfileBtnImg.src = "/img/buttonhover(final).png"
 })
 ProfileBtn.addEventListener("mouseleave", function(){
   ProfileBtnImg.src = "/img/button(final).png"
