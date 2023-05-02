@@ -162,4 +162,15 @@ function activation(index, lists) {
 
 
 
-/* 버튼 만들기 캔버스*/
+/* 버튼 오버*/
+const ProfileBtn = document.querySelector(".ProfileBtn")
+const ProfileBtnImg = document.querySelector(".ProfileBtn img")
+ProfileBtnImg.src = "/img/button(final).png"
+
+
+ProfileBtn.addEventListener("mouseenter", function(){
+  ProfileBtnImg.src = "/img/buttonhover.png"
+})
+ProfileBtn.addEventListener("mouseleave", function(){
+  ProfileBtnImg.src = "/img/button(final).png"
+})
