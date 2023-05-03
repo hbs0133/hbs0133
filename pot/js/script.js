@@ -113,6 +113,41 @@ function wait(ms) {
 setTimeout(typing, 1500);
 
 
+/* ---------------프로젝트페이지 애니메이션---------------*/
+/* 버튼 오버*/
+const ProjectBtn = document.querySelector(".ProjectBtn")
+const ProjectBtnImg = document.querySelector(".ProjectBtn img")
+const anibox = document.querySelector(".aniBox")
+const ProjectBtnBox = document.querySelector(".ProjectBtnBox")
+const Project = document.querySelector("figure")
+
+ProjectBtnImg.src = "/img/button(final).png"
+
+ProjectBtn.addEventListener("mouseenter", function(){
+  ProjectBtnImg.src = "/img/buttonhover(final).png"
+})
+ProjectBtn.addEventListener("mouseleave", function(){
+  ProjectBtnImg.src = "/img/button(final).png"
+})
+
+
+ProjectBtn.addEventListener("click", () => {
+  function anidisplay(){
+    ProjectBtnBox.style.display = "none"
+    Project.style.display = "block"
+  }
+  anibox.style.transform = "translateX(0)"
+  anibox.style.transform = "translateX(100%)"
+  setTimeout(anidisplay, 2000)
+})
+
+
+
+
+
+
+
+
 /* -----------------------뮤직플레이어---------------------------------*/
 const frame = document.querySelector("section");
 const lists = frame.querySelectorAll("article");
@@ -158,19 +193,3 @@ function activation(index, lists) {
   }
   lists[index].classList.add("on");
 }
-
-
-
-
-/* 버튼 오버*/
-const ProfileBtn = document.querySelector(".ProfileBtn")
-const ProfileBtnImg = document.querySelector(".ProfileBtn img")
-ProfileBtnImg.src = "/img/button(final).png"
-
-
-ProfileBtn.addEventListener("mouseenter", function(){
-  ProfileBtnImg.src = "/img/buttonhover(final).png"
-})
-ProfileBtn.addEventListener("mouseleave", function(){
-  ProfileBtnImg.src = "/img/button(final).png"
-})
