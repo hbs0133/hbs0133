@@ -1,0 +1,349 @@
+@charset "UTF-8";
+/* Font */
+/* 평창평화체 */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+@font-face {
+  font-family: "PyeongChangPeace-Bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/PyeongChangPeace-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+/* 프리텐다드 */
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+/* Noto Sans (en) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+li {
+  list-style: none;
+}
+
+/* Heading Font Size */
+h1 {
+  font-size: 40px;
+  font-family: "PyeongChangPeace-Bold";
+}
+
+h2 {
+  font-size: 20px;
+  font-family: "Pretendard-Regular";
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 16px;
+  font-family: "Pretendard-Regular";
+}
+
+span {
+  font-size: 12px;
+  font-family: "Pretendard-Regular";
+}
+
+/* color */
+/* text-color */
+/* Mixin */
+* {
+  user-select: none;
+}
+
+body {
+  width: 28rem;
+  height: 100vh;
+  padding: 0;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+.shopdetail_container {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Pretendard-Regular";
+}
+.shopdetail_container .shopdetail_header {
+  width: 100%;
+  height: 28%;
+  position: relative;
+  background: url("/Team_img/podobread.jpg") center center no-repeat;
+  background-size: cover;
+}
+.shopdetail_container .shopdetail_header i {
+  color: #FFFFFF;
+  font-size: 20px;
+}
+.shopdetail_container .shopdetail_header strong {
+  color: #FF5C00;
+}
+.shopdetail_container .shopdetail_header button {
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+}
+.shopdetail_container .shopdetail_header .shopdetail_header_back {
+  position: absolute;
+  left: 7%;
+  top: 10%;
+}
+.shopdetail_container .shopdetail_header .shopdetail_header_back i {
+  font-size: 16px;
+}
+.shopdetail_container .shopdetail_header .shopdetail_header_current_viewer {
+  position: absolute;
+  width: 230px;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #F9EBC7;
+  color: #4c3525;
+  text-align: center;
+  line-height: 25px;
+  border-radius: 50px;
+}
+.shopdetail_container .shopdetail_header .shopdetail_header_slider_back {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 7%;
+}
+.shopdetail_container .shopdetail_header .shopdetail_header_slider_next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 7%;
+}
+.shopdetail_container .shopdetail_header .shopdetail_header_slider_page {
+  position: absolute;
+  bottom: 5%;
+  right: 7%;
+  color: #FFFFFF;
+  letter-spacing: -1.5px;
+}
+.shopdetail_container .shopdetail_header .shopdetail_header_slider_page .sliderCount {
+  font-style: normal;
+}
+.shopdetail_container .shopdetail_main {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 20px;
+  gap: 10px;
+}
+.shopdetail_container .shopdetail_main .shopdetail_main_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #4c3525;
+}
+.shopdetail_container .shopdetail_main .shopdetail_main_title i {
+  font-size: 16px;
+}
+.shopdetail_container .shopdetail_main .shopdetail_main_starScore {
+  color: #4c3525;
+}
+.shopdetail_container .shopdetail_main .shopdetail_main_starScore i {
+  font-size: 16px;
+  color: #FFC805;
+}
+.shopdetail_container .shopdetail_main .shopdetail_main_starScore strong {
+  color: #FF5C00;
+}
+.shopdetail_container .shopdetail_main .shopdetail_main_leftSeat {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #4c3525;
+}
+.shopdetail_container .shopdetail_main .shopdetail_main_leftSeat strong {
+  color: #FF5C00;
+}
+.shopdetail_container .shopdetail_main .shopdetail_main_leftSeat button {
+  font-family: "Pretendard-Regular";
+  background: transparent;
+  border: none;
+  color: #FF5C00;
+}
+.shopdetail_container .shopdetail_gnb {
+  position: sticky;
+  top: 0px;
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom: 1px solid #A69A92;
+  background-color: #FFFFFF;
+  z-index: 1;
+}
+.shopdetail_container .shopdetail_gnb button {
+  width: 70px;
+  background: transparent;
+  border: none;
+  font-family: "Pretendard-Regular";
+  font-size: 20px;
+  font-weight: bold;
+  color: #4c3525;
+  padding-bottom: 8px;
+}
+.shopdetail_container .shopdetail_gnb .shopdetail_gnb_home {
+  border-bottom: 1px solid #4c3525;
+}
+.shopdetail_container .shopdetail_gnb .shopdetail_gnb_menu {
+  opacity: 0.5;
+}
+.shopdetail_container .shopdetail_gnb .shopdetail_gnb_review {
+  opacity: 0.5;
+}
+.shopdetail_container .shopdetail_content {
+  display: none;
+  flex-direction: column;
+  height: 50%;
+}
+.shopdetail_container .shopdetail_content_shopIntro {
+  flex: 0.8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 30px;
+  border-bottom: 1px solid #4c3525;
+  color: #4c3525;
+}
+.shopdetail_container .shopdetail_content_shopIntro h3 {
+  font-weight: 400;
+}
+.shopdetail_container .shopdetail_content_shopInfo {
+  flex: 1.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  padding-left: 30px;
+  border-bottom: 1px solid #4c3525;
+  color: #4c3525;
+  font-weight: 500;
+}
+.shopdetail_container .shopdetail_content_shopInfo i {
+  margin-right: 15px;
+}
+.shopdetail_container .shopdetail_content_hashTagBox {
+  flex: 1.2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.shopdetail_container .shopdetail_content_hashTagBox .shopdetail_content_hashTag {
+  margin-left: 7px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.shopdetail_container .shopdetail_content_hashTagBox h2 {
+  margin-left: 30px;
+  color: #4c3525;
+}
+.shopdetail_container .shopdetail_content_hashTagBox span {
+  background-color: #A69A92;
+  border-radius: 8px;
+  padding: 5px 33px;
+  margin: 0 5px;
+}
+
+.shopdetail_menu {
+  height: 50%;
+}
+.shopdetail_menu img {
+  width: 100px;
+  height: 80px;
+  border-radius: 8px;
+  margin: 0;
+}
+.shopdetail_menu .shopdetail_menu_nav {
+  position: sticky;
+  top: 0;
+  padding-top: 15px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #A69A92;
+}
+.shopdetail_menu .shopdetail_menu_nav a {
+  width: 50px;
+  border-bottom: 1px solid #4c3525;
+  padding-bottom: 15px;
+  font-size: 12px;
+  opacity: 0.5;
+}
+.shopdetail_menu .shopdetail_menu_nav .shopdetail_menu_nav_Coffee {
+  opacity: 1;
+}
+.shopdetail_menu .shopdetail_menu_nav .shopdetail_menu_nav_Tea {
+  opacity: 0.5;
+}
+.shopdetail_menu .shopdetail_menu_nav .shopdetail_menu_nav_Cake {
+  opacity: 0.5;
+}
+.shopdetail_menu .shopdetail_menu_nav .shopdetail_menu_nav_Bread {
+  opacity: 0.5;
+}
+.shopdetail_menu .shopdetail_menu_nav .shopdetail_menu_nav_Beans {
+  opacity: 0.5;
+}
+.shopdetail_menu .shopdetail_menu_list {
+  padding: 0px 30px;
+  color: #4c3525;
+}
+.shopdetail_menu .shopdetail_menu_list .shopdetail_menu_items_title {
+  margin-top: 20px;
+}
+.shopdetail_menu .shopdetail_menu_list .shopdetail_menu_item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+.shopdetail_menu .shopdetail_menu_list .shopdetail_menu_item .shopdetail_menu_item_pricebox {
+  transform: translateY(3px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.shopdetail_menu .shopdetail_menu_list .shopdetail_menu_item .shopdetail_menu_item_pricebox .shopdetail_menu_item_price_temp {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.shopdetail_menu .shopdetail_menu_list .shopdetail_menu_item .shopdetail_menu_item_pricebox .shopdetail_menu_item_pricebox_price {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.shopdetail_menu .shopdetail_menu_list .shopdetail_menu_item:nth-child(odd) {
+  border-bottom: 1px solid #A69A92;
+}
+.shopdetail_menu .shopdetail_menu_list .shopdetail_menu_moreBtn {
+  border: none;
+  background: transparent;
+  font-size: 16px;
+  font-weight: 600;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 20px 0;
+  font-family: "Pretendard-Regular";
+  color: #4c3525;
+  border: 1px solid red;
+}
